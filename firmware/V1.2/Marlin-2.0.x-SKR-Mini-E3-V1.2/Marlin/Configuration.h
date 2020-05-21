@@ -507,9 +507,9 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
-#define BED_LIMIT_SWITCHING
+//#define BED_LIMIT_SWITCHING
 
 /**
  * Max Bed Power
@@ -525,9 +525,9 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)  
-  #define DEFAULT_bedKp 70.12
-  #define DEFAULT_bedKi 13.67
-  #define DEFAULT_bedKd 239.84
+  #define DEFAULT_bedKp 108.89
+  #define DEFAULT_bedKi 21.22
+  #define DEFAULT_bedKd 372.44
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -720,7 +720,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95.5 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 95 }
 
 /**
  * Default Max Feed Rate (mm/s)
